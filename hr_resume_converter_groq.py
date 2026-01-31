@@ -13,6 +13,13 @@ from docx.oxml.ns import qn
 from docx2pdf import convert
 from groq import Groq
 
+# Load environment variables for local development
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 # ================= CONFIGURATION =================
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = "llama-3.3-70b-versatile"
