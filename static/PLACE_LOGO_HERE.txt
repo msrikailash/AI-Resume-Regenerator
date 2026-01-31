@@ -1,0 +1,28 @@
+PLACE YOUR KRIFY LOGO HERE
+===========================
+
+SUPPORTED FORMATS
+✓ JPG  (.jpg)
+✓ JPEG (.jpeg)
+✓ PNG  (.png)
+✓ BMP  (.bmp)
+
+Instructions:
+1. Copy your Krify logo image (the gear with green center)
+2. Paste it in this folder
+3. Rename to: krify_logo.[format]
+   Examples:
+   - krify_logo.jpg
+   - krify_logo.png
+   - krify_logo.jpeg
+   - krify_logo.bmp
+
+4. Restart the app (run launch_groq.bat)
+5. Logo will appear in all generated resumes!
+
+Recommended:
+- Format: PNG (best quality) or JPG (smaller size)
+- Size: 200x200 to 400x400 pixels
+- Background: Transparent (PNG) or white (JPG)
+
+The logo will appear centered at the top of every resume.
