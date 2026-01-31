@@ -193,8 +193,8 @@ def create_resume_pdf(data, path):
         nonlocal y
         if not content: return
         
-        # Space before section
-        y -= 0.15*inch
+        # INCREASED Space before section (gap between sections)
+        y -= 0.45*inch
 
         # Section Title
         c.setFont("Helvetica-Bold", 12)
@@ -236,13 +236,13 @@ def create_resume_pdf(data, path):
                     current_line.append(word)
                 else:
                     c.drawString(indent, y, " ".join(current_line))
-                    y -= 0.18*inch
+                    y -= 0.22*inch
                     current_line = [word]
                     if y < margin + 0.5*inch: break
             
             if current_line:
                 c.drawString(indent, y, " ".join(current_line))
-                y -= 0.25*inch
+                y -= 0.3*inch # Increased space between matter/paragraphs
 
     add_section("PROFILE SUMMARY", data["Profile Summary"])
     add_section("PROFESSIONAL EXPERIENCE", data["Professional Experience"])
