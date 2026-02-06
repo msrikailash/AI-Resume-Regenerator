@@ -5,3 +5,4 @@ __pycache__/
 candidate_uploads/
 client_resumes/
 company_templates/
+*.pdf
